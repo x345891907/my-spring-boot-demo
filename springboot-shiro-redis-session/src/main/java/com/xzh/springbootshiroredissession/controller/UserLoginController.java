@@ -21,8 +21,6 @@ public class UserLoginController {
 
     /**
      * 登录
-     * @Author Sans
-     * @CreateTime 2019/6/20 9:21
      */
     @RequestMapping("/login")
     public Map<String,Object> login(@RequestBody SysUser sysUserEntity){
@@ -58,8 +56,6 @@ public class UserLoginController {
     }
     /**
      * 未登录
-     * @Author Sans
-     * @CreateTime 2019/6/20 9:22
      */
     @RequestMapping("/unauth")
     public Map<String,Object> unauth(){
