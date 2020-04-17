@@ -67,4 +67,9 @@
         delete from my_shiro.sys_role_menu where id = #{id}
     </delete>
 
+    <insert id="save" keyProperty="id" useGeneratedKeys="true">
+        insert into my_shiro.sys_role_menu(role_id, menu_id)
+        values (#{roleId}, #{menuId})
+    </insert>
+
 </mapper>

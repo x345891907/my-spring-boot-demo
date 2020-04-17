@@ -70,4 +70,10 @@ public interface SysUserDao {
      */
     SysUser selectUserByName(String username);
 
+    /**
+     * 获取用户信息集合
+     * @return
+     */
+    List<SysUser> list();
+
 }

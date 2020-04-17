@@ -1,6 +1,7 @@
 package com.xzh.springbootshiroredissession.dao;
 
 import com.xzh.springbootshiroredissession.entity.SysMenu;
+import com.xzh.springbootshiroredissession.entity.SysUser;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -70,4 +71,9 @@ public interface SysMenuDao {
      */
     List<SysMenu> selectSysMenuByRoleId(Long roleId);
 
+    /**
+     * 获取权限信息集合
+     * @return
+     */
+    List<SysMenu> list();
 }

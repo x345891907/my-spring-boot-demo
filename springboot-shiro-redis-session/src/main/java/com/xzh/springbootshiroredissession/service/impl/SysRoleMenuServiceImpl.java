@@ -77,4 +77,9 @@ public class SysRoleMenuServiceImpl implements SysRoleMenuService {
     public boolean deleteById(Long id) {
         return this.sysRoleMenuDao.deleteById(id) > 0;
     }
+
+    @Override
+    public int save(SysRoleMenu sysRoleMenu) {
+        return sysRoleMenuDao.save(sysRoleMenu);
+    }
 }

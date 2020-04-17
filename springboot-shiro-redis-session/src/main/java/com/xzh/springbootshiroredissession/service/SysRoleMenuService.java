@@ -53,4 +53,9 @@ public interface SysRoleMenuService {
      */
     boolean deleteById(Long id);
 
+    /**
+     * 添加管理员角色权限(测试动态权限更新)
+     */
+    int save(SysRoleMenu sysRoleMenu);
+
 }

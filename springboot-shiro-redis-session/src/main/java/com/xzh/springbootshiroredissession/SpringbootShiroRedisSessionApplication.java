@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.xzh.springbootshiroredissession.dao")
+@MapperScan("com.xzh.springbootshiroredissession.dao.*")
 public class SpringbootShiroRedisSessionApplication {
 
     public static void main(String[] args) {

@@ -88,4 +88,13 @@ public class SysRoleServiceImpl implements SysRoleService {
 
         return sysRoleDao.selectSysRoleByUserId(userId);
     }
+
+    /**
+     * 获取角色信息集合
+     * @return
+     */
+    @Override
+    public List<SysRole> list() {
+        return sysRoleDao.list();
+    }
 }

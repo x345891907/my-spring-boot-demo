@@ -67,4 +67,9 @@
         WHERE se.user_id = #{userId}
     </select>
 
+    <select id="list" resultType="SysRoleMap">
+        select
+          role_id, role_name
+        from sys_role
+    </select>
 </mapper>

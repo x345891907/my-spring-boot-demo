@@ -60,4 +60,10 @@ public interface SysMenuService {
      */
     List<SysMenu> selectSysMenuByRoleId(Long roleId);
 
+    /**
+     * 获取权限信息集合
+     * @return
+     */
+    List<SysMenu> list();
+
 }

@@ -88,4 +88,13 @@ public class SysUserServiceImpl implements SysUserService {
 
         return sysUserDao.selectUserByName(username);
     }
+
+    /**
+     * 获取用户信息集合
+     * @return
+     */
+    @Override
+    public List<SysUser> list() {
+        return sysUserDao.list();
+    }
 }

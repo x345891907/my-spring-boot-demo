@@ -29,7 +29,7 @@
     <!--通过实体作为筛选条件查询-->
     <select id="queryAll" resultMap="SysUserMap">
         select
-          user_id, username, password, salt, state
+        user_id, username, password, salt, state
         from my_shiro.sys_user
         <where>
             <if test="userId != null">
@@ -86,6 +86,12 @@
           user_id, username, password, salt, state
         from my_shiro.sys_user
         where username = #{username}
+    </select>
+    <!--获取用户信息集合-->
+    <select id="list" resultType="SysUserMap">
+    select
+          user_id, username, password, salt, state
+        from sys_user
     </select>
 
 </mapper>

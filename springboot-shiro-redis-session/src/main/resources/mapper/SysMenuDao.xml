@@ -74,4 +74,10 @@
       WHERE se.role_id = #{roleId}
     </select>
 
+    <select id="list" resultType="SysMenuMap">
+        select
+          menu_id, name, perms
+        from sys_menu
+    </select>
+
 </mapper>

@@ -88,4 +88,13 @@ public class SysMenuServiceImpl implements SysMenuService {
 
         return sysMenuDao.selectSysMenuByRoleId(roleId);
     }
+
+    /**
+     * 获取权限信息集合
+     * @return
+     */
+    @Override
+    public List<SysMenu> list() {
+        return sysMenuDao.list();
+    }
 }
